@@ -1,0 +1,437 @@
+    /* Theme Variables */
+    :root {
+        --bg-color: #dfdfe2;
+        --text-color: #121212;
+        --primary-color: #007BFF;
+        --secondary-bg: #f1f5f9;
+    }
+
+    body.dark{
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --main-color:var(--primary-color);
+        --card-bg: #1f2833;
+        --secondary-bg: #1e293b;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+   
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: 0.3s ease;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: var(--secondary-bg);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo { 
+        font-size:24px; 
+        font-weight:bold;
+        color:var(--text-color); }
+
+    nav ul {
+        list-style:none;
+        display:flex;
+        gap:20px;
+    }
+
+    nav ul li a {
+        text-decoration:none;
+        color:#A0A0A0;
+        font-size:20px;
+        font-weight:bold;
+        transition:0.3s;
+    }
+
+    nav ul li a:hover { 
+        color: var(--text-color); 
+        }
+
+    #menuToggle { 
+        display:none; 
+        font-size:24px;
+        cursor:pointer;
+        color: var(--text-color); 
+        }
+
+    .hero {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        max-width:1200px;
+        width:100%;
+        height:80vh;
+        margin:auto;
+        padding:0 8%;
+    }
+
+    .details{ 
+        width:65%; 
+        }
+
+    .details h1{ 
+        font-size:40px;
+        margin-bottom:10px;
+        }
+
+    .text-animate{ 
+        color: var(--primary-color); 
+    }
+
+    .details h2{ 
+        font-size:27px;
+        display:flex; 
+        align-items:center;
+        font-weight:bold; 
+        }
+
+    .typing-text{ 
+        color: var(--primary-color); 
+        margin-left:10px; 
+    }
+
+    .cursor{ 
+        display:inline-block; 
+        width:2px; 
+        background-color: var(--primary-color); 
+        animation: blink 0.7s infinite; 
+    }
+
+    @keyframes blink {
+        0%,100%{opacity:1}50%{opacity:0}
+    }
+    .hero-btns{ 
+        display:flex;
+        gap:15px;
+        margin-top: 15px;
+        }
+    .btn-primary, .btn-secondary{
+        padding:12px 25px; 
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:500; 
+        transition:0.3s; 
+        }
+    .btn-primary{
+        background: var(--primary-color); 
+        color:#fff; 
+        }
+
+    .btn-primary:hover{ 
+        background:#0056b3;
+     }
+    .btn-secondary{ 
+        border:2px solid var(--primary-color);
+        color:var(--primary-color);
+        }
+    .btn-secondary:hover{
+        background:var(--primary-color);
+        color:#fff; 
+        }
+
+    .orbit-container{
+        position:relative;
+        width:35%;
+        display:flex;
+        justify-content:center; 
+        align-items:center; 
+        margin-left: 55px;
+        }
+
+    .profile-box{
+        position:relative;
+        width:350px; 
+        height:350px;
+        border-radius:50%;
+        border:2px solid var(--primary-color); 
+        padding:5px;
+        background: var(--secondary-bg);
+        z-index:10;
+            }
+    .profile-box img{ 
+        width:100%; 
+        height:100%;
+        border-radius:50%; 
+        object-fit:cover;
+        }
+    .icons-wrapper{ 
+        position:absolute;
+        width:100%; 
+        height:100%;
+        animation: rotateOrbit 15s linear infinite;
+        }
+    .orbit-container:hover .icons-wrapper, .orbit-container:hover .icon-link i{ 
+        animation-play-state:paused; 
+    }
+    .icon-link{ 
+        position:absolute;
+        top:50%; 
+        left:50%;
+        text-decoration:none; 
+        --radius:200px; transform:translate(-50%,-50%) rotate(calc(var(--i)*(360deg/4))) translateY(var(--radius)); 
+        }
+    .icon-link i{ 
+        width:40px;
+        height:40px;
+        background:var(--secondary-bg); 
+        color:var(--primary-color); 
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+        border-radius:50%; 
+        font-size:18px;
+        border:2px solid var(--primary-color);
+        transition:0.4s ease; 
+        animation:reverseRotate 20s linear infinite;
+        }
+    .icon-link i:hover{
+        background: var(--primary-color); 
+        color:#fff; 
+        transform: scale(1.2) rotate(0deg);
+        box-shadow:0 0 20px var(--primary-color);
+        }
+    @keyframes rotateOrbit {
+        from{transform:rotate(0deg);}to{transform:rotate(360deg); }}
+
+    @keyframes reverseRotate{from{transform:rotate(0deg);}to{transform:rotate(-360deg);}}
+
+    .whatsapp{ 
+        position:fixed; 
+        bottom:20px;
+        right:20px;
+        background:#25d366;
+        color:#fff;
+        width:50px;
+        height:50px; 
+        border-radius:50%; 
+        display:flex; 
+        justify-content:center; 
+        align-items:center; 
+        font-size:22px; 
+        }
+
+    /* Services */
+    .services-section{
+        max-width:1200px;
+        margin:100px auto;
+        padding:0 8%;
+        text-align:center;
+         }
+    .services-section h2{
+        font-size:36px;
+        margin-bottom:40px;
+        }
+    .services-container{
+        display:flex; 
+        gap:20px; 
+        flex-wrap:wrap;
+        justify-content:center; 
+        }
+    .service-card{
+        background:var(--secondary-bg);
+        color:var(--text-color); 
+        border-radius:10px;
+        padding:15px;
+        width:300px;
+        transition: transform 0.3s ease box-shadow 0.3s ease; 
+        }
+    .service-card:hover{
+        transform:translateY(-10px); 
+        box-shadow:0 15px 30px rgba(0,0,0,0.2);
+        }
+    .service-card i{
+        font-size:40px;
+        margin-bottom:15px;
+        color:var(--primary-color);
+        }
+
+    /* Projects */
+    .projects-section{
+        max-width:1200px;
+        margin:100px auto; 
+        padding:0 8%;
+        text-align:center;
+        }
+    .projects-section h2{
+        font-size:36px; 
+        margin-bottom:40px;
+        }
+    .projects-container{
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center; 
+        }
+    .project-card{ 
+        background:var(--secondary-bg); 
+        color:var(--text-color);
+        border-radius:10px;
+        padding:15px;
+        width:300px; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    .project-card:hover{ 
+        transform:translateY(-10px); 
+        box-shadow:0 15px 30px rgba(0,0,0,0.2); 
+        }
+    .project-card img{
+        width:100%; 
+        border-radius:8px; 
+        margin-bottom:15px; 
+        }  
+    .btn{
+        border:none;
+        padding: 10px 20px;
+        background-color: #3f649e;
+        border-radius: 12px;
+        margin-top: 10px;
+        } 
+    .btn a{
+        text-decoration: none;
+        color: #fffdfd;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: roboto;
+    }
+    .btn:hover{
+        background-color: #0056b3;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Contact */
+    .contact-section{
+        max-width:600px; 
+        margin:100px auto; 
+        padding:0 8%; 
+        text-align:center; 
+        }
+    .contact-section h2{ 
+        font-size:36px; 
+        margin-bottom:40px; 
+        }
+    form .form-group{ 
+        margin-bottom:15px; 
+        text-align:left; 
+    }
+    form label{ 
+        display:block; 
+        margin-bottom:5px; 
+    }
+    form input, form textarea{ 
+        width:100%; 
+        padding:10px; 
+        border-radius:5px; 
+        border:1px solid #ccc; 
+    }
+    form textarea{ resize:none; }
+    form button{ margin-top:10px; }
+
+    footer{ 
+        text-align:center;
+        background: var(--secondary-bg);
+        color:var(--text-color); 
+        padding:15px; 
+        }
+
+    /* Responsive */
+    @media(max-width:768px){
+        header{ 
+            flex-direction:column; 
+            gap:10px;
+        }
+        nav ul{ 
+            flex-direction:column; 
+            align-items:center; 
+        }
+        #menuToggle{ display:block;}
+        nav{ 
+            position:absolute; 
+            top:70px; right:0; 
+            background: var(--secondary-bg); 
+            width:100%; 
+            transform:translateY(-200%); 
+            transition:0.3s ease; 
+        }
+        nav.active{ 
+            transform:translateY(0); 
+        }
+        nav ul li{ margin:10px 0; }
+
+        .hero{ 
+            flex-direction:column; 
+            height:auto; 
+            text-align:center; 
+            padding:40px 5%; 
+        }
+        .details{ width:100%; }
+
+        .details h1{ font-size:32px; }
+        .details h2{ 
+            font-size:22px; 
+            justify-content:center; 
+            }
+        .hero-btns{ 
+            justify-content:center; 
+            flex-wrap:wrap; 
+            }
+        .orbit-container{ 
+            width:100%; 
+            margin-top:40px; 
+            }
+        .profile-box{ 
+            width:250px; 
+            height:250px; 
+            }
+        .icon-link{ --radius:140px; }
+        .services-container, .projects-container{ 
+            flex-direction:column; 
+            align-items:center; 
+            }
+        .service-card, .project-card{ width:90%; }
+    }
+    @media(max-width:480px){
+        .details h1{ font-size:26px; }
+        .details h2{ font-size:18px; }
+        .details p{ font-size:14px; }
+
+        .btn-primary, .btn-secondary{ 
+            padding:10px 18px; 
+            font-size:14px; 
+        }
+        .profile-box{ 
+            width:200px; 
+            height:200px; 
+        }
+        .icon-link{ --radius:110px; }
+        .icon-link i{ 
+            width:35px; 
+            height:35px; 
+            font-size:14px; 
+        }
+        .whatsapp{ 
+            width:45px; 
+            height:45px; 
+            font-size:18px; 
+        }
+    }
