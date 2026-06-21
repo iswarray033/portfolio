@@ -413,9 +413,9 @@
         .service-card, .project-card{ width:90%; }
     }
     .whatsapp{ 
-        position:fixed; 
-        bottom:20px;
-        right:20px;
+        position: fixed; 
+        bottom:30px;
+        right:30px;
         background:#25d366;
         color:#fff;
         width:50px;
@@ -449,7 +449,7 @@
         .whatsapp{ 
         position:fixed; 
         bottom:20px;
-        right:20px;
+        right:30px;
         background:#25d366;
         color:#fff;
         width:45px;
