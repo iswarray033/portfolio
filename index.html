@@ -1,151 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iswar Chandra Roy Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <a href="#"
+        ><img
+          class="img-fluide logo rounded-3"
+          src="images/logo golden.png"
+          alt="Logo"
+      /></a>
 
-    <header > 
-       
-            <a href="#"><img class="img-fluide logo rounded-3" src="images/logo golden.png" alt="Logo"></a>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <nav id="navMenu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
 
-        <div id="menuToggle">
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <button id="themeToggle">🌙</button>
-    
+      <button id="themeToggle">🌙</button>
     </header>
 
     <section id="home" class="hero">
-        <div class="details" data-aos="fade-right">
-            <h1>Hello, I'm <span class="text-animate">Iswar Chandra Roy</span></h1>
-            <h2> I'm a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
-            <p>Specializing in modern design and efficient multimedia services.</p>
+      <div class="details" data-aos="fade-right">
+        <h1>Hello, I'm <span class="text-animate">Iswar Chandra Roy</span></h1>
+        <h2>
+          I'm a <span class="typing-text"></span
+          ><span class="cursor">&nbsp;</span>
+        </h2>
+        <p>Specializing in modern design and efficient multimedia services.</p>
 
-            <div class="hero-btns">
-                <a href="#" class="btn-primary">Download CV</a>
-                <a href="#contact" class="btn-secondary">Hire Me</a>
-            </div>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary">Download CV</a>
+          <a href="#contact" class="btn-secondary">Hire Me</a>
         </div>
+      </div>
 
-        <div class="orbit-container" data-aos="fade-left">
-            <div class="profile-box">
-                <img src="images/pic1.png" alt="Profile Pic">
-            </div>
-            <div class="icons-wrapper">
-                <a href="https://facebook.com/iswarray033/" target="_blank" class="icon-link" style="--i:1;">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://github.com/iswarray033" target="_blank" class="icon-link" style="--i:2;">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/iswarray033" target="_blank" class="icon-link" style="--i:3;">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/iswarray033" target="_blank" class="icon-link" style="--i:4;">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+      <div class="orbit-container" data-aos="fade-left">
+        <div class="profile-box">
+          <img src="images/pic1.png" alt="Profile Pic" />
         </div>
+        <div class="icons-wrapper">
+          <a
+            href="https://facebook.com/iswarray033/"
+            target="_blank"
+            class="icon-link"
+            style="--i: 1"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://github.com/iswarray033"
+            target="_blank"
+            class="icon-link"
+            style="--i: 2"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/iswarray033"
+            target="_blank"
+            class="icon-link"
+            style="--i: 3"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://twitter.com/iswarray033"
+            target="_blank"
+            class="icon-link"
+            style="--i: 4"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section id="services" class="services-section" data-aos="fade-up">
-        <h2>My Services</h2>
-        <div class="services-container">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Web Design</h3>
-                <p>Modern responsive web design for all devices.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-code"></i>
-                <h3>Front-end Dev</h3>
-                <p>Efficient and clean front-end development.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Graphic Design</h3>
-                <p>Creative graphics, banners, and social media design.</p>
-            </div>
+      <h2>My Services</h2>
+      <div class="services-container">
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Design</h3>
+          <p>Modern responsive web design for all devices.</p>
         </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-code"></i>
+          <h3>Front-end Dev</h3>
+          <p>Efficient and clean front-end development.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <p>Creative graphics, banners, and social media design.</p>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects-section" data-aos="fade-up">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                <img src="images/PROJECT.JPG" alt="Project 1">
-                <h3>Project 1</h3>
-                <button class="btn"><a href="#">Live View</a></button>
-            </div>
-            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                <img src="images/PROJECT.JPG" alt="Project 2">
-                <h3>Project 2</h3>
-                <button class="btn"><a href="#">Live View</a></button>
-            </div>
-            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-                <img src="images/PROJECT.JPG" alt="Project 3">
-                <h3>Project 3</h3>
-                <button class="btn"><a href="#">Live View</a></button>
-            </div>
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/e-comerce.PNG" alt="Project 1" />
+          <h3>E-comerce</h3>
+          <button class="btn">
+            <a href="https://e-commercew.netlify.app/">Live View</a>
+          </button>
         </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/news.jpg" alt="Project 2" />
+          <h3>News Portal</h3>
+          <button class="btn"><a href="#">Live View</a></button>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/beauty.PNG" alt="Project 3" />
+          <h3>Beauty</h3>
+          <button class="btn"><a href="#">Live View</a></button>
+        </div>
+        
+        <!--Comming Soon-->
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="images/comming soon.png" alt="Project 1" />
+          <h3>Project</h3>
+          <button class="btn">
+            <a href="https://e-commercew.netlify.app/">Live View</a>
+          </button>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/comming soon.png" alt="Project 2" />
+          <h3>Project</h3>
+          <button class="btn"><a href="#">Live View</a></button>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <img src="images/comming soon.png" alt="Project 3" />
+          <h3>Project</h3>
+          <button class="btn"><a href="#">Live View</a></button>
+        </div>
+      </div>
+
+      <div class="projects-container"></div>
     </section>
 
     <section id="contact" class="contact-section" data-aos="fade-up">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" name="name" required placeholder="Your Name">
-            </div>
-            <div class="form-group">
-                <label>Mobile</label>
-                <input type="tel" name="tel" required placeholder="Mobile number">
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" required placeholder="Your Email">
-            </div>
-            <div class="form-group">
-                <label>Message</label>
-                <textarea name="message" required placeholder="Your Message here.."></textarea>
-            </div>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" required placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <label>Mobile</label>
+          <input type="tel" name="tel" required placeholder="Mobile number" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="Your Email" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea
+            name="message"
+            required
+            placeholder="Your Message here.."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </section>
 
     <a href="https://wa.me/+8801701124086" class="whatsapp">
-        <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-whatsapp"></i>
     </a>
 
-    <footer>&copy; 2026 | All Reserved team Iswar Chandra Roy 
-        <p id="time"></p>
+    <footer>
+      &copy; 2026 | All Reserved team Iswar Chandra Roy
+      <p id="time"></p>
     </footer>
 
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
+      AOS.init({ duration: 1000, once: true });
     </script>
-</body>
-
+  </body>
 </html>
